@@ -11268,6 +11268,15 @@ p {
   visibility: visible;
 }
 
+.portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* blog wrapper */
 .blog-card {
   display: -webkit-box;
@@ -11641,6 +11650,14 @@ pre .code {
   padding: 40px 0;
 }
 
+.btn-whatsapp {
+  transition: transform 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 991.98px) {
   .contact {
     padding: 300px 0 0;
@@ -11652,6 +11669,11 @@ pre .code {
   .contact .contact-info-card {
     min-height: auto !important;
   }
+
+  .btn-whatsapp {
+    width: 100%;
+    margin-top: 10px;
+}
 }
 
 .contact .map {
